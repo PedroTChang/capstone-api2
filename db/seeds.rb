@@ -7,26 +7,26 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Medium.create!([
-  {name: "title", latest: 123, status: "Currently Airing"},
-  {name: "title", latest: 123, status: "Finished Airing"},
-  {name: "title", latest: 123, status: "Currently Airing"},
-  {name: "title", latest: 123, status: "Currently Airing"},
-  {name: "title", latest: 123, status: "status"},
-  {name: "title", latest: 123, status: "Currently Airing"},
-  {name: "title", latest: 123, status: "status"},
-  {name: "title", latest: 123, status: "status"},
-  {name: "title", latest: 123, status: "Currently Airing"},
+  {name: "Full Metal Alchemist: Brotherhood", latest: 64, media_type: "Anime" status: "Finished Airing"},
+  {name: "Guilty Crown", latest: 22, media_type: "Anime", status: "Finished Airing"},
+  {name: "My Hero Academia", latest: 113, media_type: "Anime", status: "Currently Airing"},
+  {name: "The Beginning After the End", latest: 152, media_type: "Manga", status: "Currently Airing"},
+  {name: "Damn Reincarnation", latest: 22, media_type: "Manwha", status: "Currently Airing"},
+  {name: "Hunter x Hunder (2011)", latest: 148, media_type: "Anime", status: "Finished Airing"},
+  {name: "Tales of Demons and Gods", latest: 386, media_type: "Manhua", status: "Currently Airing"},
+  {name: "Return of the Blossoming Blade", latest: 71, media_type: "Manhua", status: "Currently Airing"},
+  {name: "Kaguya-sama wa Kokurasetai: Ultra Romantic", latest: 13, media_type: "Manga", status: "Finished Airing"},
 ])
 
 Tracker.create!([
-  {user_id: 1, medium_id: 1, type: "type", progress: "Watching"},
-  {user_id: 2, medium_id: 2, type: "type", progress: "Completed"},
-  {user_id: 3, medium_id: 3, type: "type", progress: "Reading"},
-  {user_id: 2, medium_id: 4, type: "type", progress: "Watching"},
-  {user_id: 3, medium_id: 5, type: "type", progress: "Completed"},
-  {user_id: 1, medium_id: 6, type: "type", progress: "Watching"},
-  {user_id: 2, medium_id: 7, type: "type", progress: "Dropped"},
-  {user_id: 3, medium_id: 8, type: "type", progress: "Completed"},
-  {user_id: 2, medium_id: 9, type: "type", progress: "Watching"},
+  {user_id: 1, medium_id: 1, current: 64, progress: "Completed"},
+  {user_id: 2, medium_id: 2, current: 8, progress: "Dropped"},
+  {user_id: 2, medium_id: 3, current: 113, progress: "Watching"},
+  {user_id: 2, medium_id: 4, current: 150, progress: "Reading"},
+  {user_id: 2, medium_id: 5, current: 20, progress: "Reading"},
+  {user_id: 1, medium_id: 6, current: 86, progress: "Watching"},
+  {user_id: 2, medium_id: 7, current: 66, progress: "Dropped"},
+  {user_id: 1, medium_id: 8, current: 71, progress: "Reading"},
+  {user_id: 2, medium_id: 9, current: 8, progress: "Watching"},
 ])
 
