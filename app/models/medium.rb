@@ -5,5 +5,5 @@ class Medium < ApplicationRecord
   validates :latest, numericality: { greater_than: 0 }
   has_many :images
   has_many :trackers
-  # has_many :users, through: :trackers
+  has_many :users, through: :trackers
 end

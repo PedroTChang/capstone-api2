@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Medium.create!([
+  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
+  {name: "title", latest: 123, type: "type", status: "Finished Airing"},
+  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
+  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
+  {name: "title", latest: 123, type: "type", status: "status"},
+  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
+  {name: "title", latest: 123, type: "type", status: "status"},
+  {name: "title", latest: 123, type: "type", status: "status"},
+  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
+])
+
+Tracker.create!([
+  {user_id: 1, medium_id: 1, type: "type", progress: "Watching"},
+  {user_id: 2, medium_id: 2, type: "type", progress: "Completed"},
+  {user_id: 3, medium_id: 3, type: "type", progress: "Reading"},
+  {user_id: 2, medium_id: 4, type: "type", progress: "Watching"},
+  {user_id: 3, medium_id: 5, type: "type", progress: "Completed"},
+  {user_id: 1, medium_id: 6, type: "type", progress: "Watching"},
+  {user_id: 2, medium_id: 7, type: "type", progress: "Dropped"},
+  {user_id: 3, medium_id: 8, type: "type", progress: "Completed"},
+  {user_id: 2, medium_id: 9, type: "type", progress: "Watching"},
+])
+
