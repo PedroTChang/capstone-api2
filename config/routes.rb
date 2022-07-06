@@ -12,11 +12,11 @@ Rails.application.routes.draw do
   patch "/media/:id" => "media#update"
   delete "/media/:id" => "media#destroy"
 
-  # get "/trackers" => "#trackers#index"
-  # post "/trackers" => "trackers#create"
-  # get "/trackers/:id" => "trackers#show"
-  # path "/trackers/:id" => "trackers#update"
-  # delete "/trackers/:id" => "trackers#destroy"
+  get "/trackers" => "trackers#index"
+  post "/trackers" => "trackers#create"
+  get "/trackers/:id" => "trackers#show"
+  patch "/trackers/:id" => "trackers#update"
+  delete "/trackers/:id" => "trackers#destroy"
 
   # get "/images" => "#images#index"
   # post "/images" => "images#create"
