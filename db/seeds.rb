@@ -7,15 +7,15 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Medium.create!([
-  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
-  {name: "title", latest: 123, type: "type", status: "Finished Airing"},
-  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
-  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
-  {name: "title", latest: 123, type: "type", status: "status"},
-  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
-  {name: "title", latest: 123, type: "type", status: "status"},
-  {name: "title", latest: 123, type: "type", status: "status"},
-  {name: "title", latest: 123, type: "type", status: "Currently Airing"},
+  {name: "title", latest: 123, status: "Currently Airing"},
+  {name: "title", latest: 123, status: "Finished Airing"},
+  {name: "title", latest: 123, status: "Currently Airing"},
+  {name: "title", latest: 123, status: "Currently Airing"},
+  {name: "title", latest: 123, status: "status"},
+  {name: "title", latest: 123, status: "Currently Airing"},
+  {name: "title", latest: 123, status: "status"},
+  {name: "title", latest: 123, status: "status"},
+  {name: "title", latest: 123, status: "Currently Airing"},
 ])
 
 Tracker.create!([
