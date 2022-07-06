@@ -26,7 +26,7 @@ class TrackersController < ApplicationController
   
   def show
     tracker = params[:id]
-    tracker = Tracker.find_by(id: tracker_id)
+    tracker = Tracker.find_by(id: tracker)
     render json: tracker.as_json
     # @tracker = tracker.find_by(id: tracker_id)
     # render template: "tracker/show"
