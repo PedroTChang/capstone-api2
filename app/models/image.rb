@@ -1,3 +1,3 @@
 class Image < ApplicationRecord
-  belongs_to :media
+  belongs_to :medium
 end
