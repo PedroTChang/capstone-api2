@@ -15,10 +15,4 @@ Rails.application.routes.draw do
   get "/media" => "media#index"
   get "/media/:id" => "media#show"
   delete "/media/:id" => "media#destroy"
-
-  # get "/images" => "images#index"
-  # post "/images" => "images#create"
-  # get "/images/:id" => "images#show"
-  # patch "/images/:id" => "images#update"
-  # delete "/images/:id" => "images#destroy"
 end
