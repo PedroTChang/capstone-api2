@@ -1,5 +1,6 @@
 {
   id: tracker.id,
+  medium_id: tracker.medium_id,
   name: tracker.medium.name,
   latest: tracker.medium.latest,
   media_type: tracker.medium.media_type,

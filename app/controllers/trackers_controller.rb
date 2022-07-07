@@ -3,19 +3,18 @@ class TrackersController < ApplicationController
   before_action :authenticate_user
 
   def index
-    @trackers = current_user.trackers.where(user_id: 1)
+    @trackers = current_user.trackers.where(user_id: current_user.id)
     render template: "trackers/index"
   end
 
   def create
-    tracker = Tracker.new(
-      user_id: params[:user_id],
+    @tracker = Tracker.new(
       medium_id: params[:medium_id],
       current: params[:current],
       progress: params[:progress],
     )
-    # render json: tracker.as_json
     render template: "trackers/show"
+    # render json: tracker.as_json
     # if tracker.save
     #   @tracker = tracker
     #   render template: "trackers/show"
@@ -24,14 +23,6 @@ class TrackersController < ApplicationController
     # end
   end
   
-  def show
-    tracker = params[:id]
-    tracker = Tracker.find_by(id: tracker)
-    render json: tracker.as_json
-    # @tracker = tracker.find_by(id: tracker_id)
-    # render template: "tracker/show"
-  end
-
   def update
     tracker = Tracker.find_by(id: params[:id])
     tracker.user_id = params[:user_id] || tracker.user_id

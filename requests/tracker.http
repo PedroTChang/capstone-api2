@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTczMDQ0MjF9.bBovf078KLuQi2Ki3Re9hbbkUhvXPaO3zwhViUt--zY
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTczMDU2NTB9.QRuIy_gHNDqP5V6M09eKl5y-UfMpnbSQSZCTrpHVpMI
 
 ### trackers Index
 GET http://localhost:3000/trackers.json
@@ -10,18 +10,15 @@ Content-Type: application/json
 Authorization: Bearer {{ jwt }}
 
 {
-  "user_id": 1,
   "medium_id": 3,
   "current": 121,
   "progress": "Test"
 }
 
-### trackers Show
-GET http://localhost:3000/trackers/1.json
-
 ### trackers Update
 PATCH http://localhost:3000/trackers/2.json
 Content-Type: application/json
+Authorization: Bearer {{ jwt }}
 
 {
   "user_id": 1,
@@ -31,3 +28,4 @@ Content-Type: application/json
 }
 ### trackers Destroy
 DELETE http://localhost:3000/trackers/3.json
+Authorization: Bearer {{ jwt }}
