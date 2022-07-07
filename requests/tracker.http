@@ -16,16 +16,15 @@ Authorization: Bearer {{ jwt }}
 }
 
 ### trackers Update
-PATCH http://localhost:3000/trackers/2.json
+PATCH http://localhost:3000/trackers/5.json
 Content-Type: application/json
 Authorization: Bearer {{ jwt }}
 
 {
-  "user_id": 1,
-  "medium_id":4,
-  "current": 111,
-  "progress": "Test 2"
+  "medium_id": 5,
+  "current": 22,
+  "progress": "Reading"
 }
 ### trackers Destroy
-DELETE http://localhost:3000/trackers/3.json
+DELETE http://localhost:3000/trackers/10.json
 Authorization: Bearer {{ jwt }}

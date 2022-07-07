@@ -22,19 +22,18 @@ class TrackersController < ApplicationController
   end
   
   def update
-    tracker = Tracker.find_by(id: params[:id])
-    tracker.user_id = params[:user_id] || tracker.user_id
-    tracker.medium_id = params[:medium_id] || tracker.medium_id
-    tracker.current = params[:current] || tracker.current
-    tracker.progress = params[:progress] || tracker.progress
-    tracker.save
-    render json: tracker.as_json
-    # if tracker.save
-    #   @tracker = tracker
-    #   render template: "trackers/show"
-    # else
-    #   render json: { errors: tracker.errors.full_messages }, status: :unprocessable_entity
-    # end
+    if current_user
+      # tracker = current_user.tracker.where()
+      @tracker = Tracker.find_by(id: params[:id])
+      # @tracker.current_user.id
+      @tracker.medium_id = params[:medium_id] || tracker.medium_id
+      @tracker.current = params[:current] || tracker.current
+      @tracker.progress = params[:progress] || tracker.progress
+      @tracker.save
+      render template: "trackers/show"
+    else
+      render json: { errors: tracker.errors.full_messages }, status: :unprocessable_entity
+    end
   end
 
   def destroy
