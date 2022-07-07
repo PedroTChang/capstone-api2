@@ -9,18 +9,16 @@ class TrackersController < ApplicationController
 
   def create
     @tracker = Tracker.new(
+      user_id: current_user.id,
       medium_id: params[:medium_id],
       current: params[:current],
       progress: params[:progress],
     )
-    render template: "trackers/show"
-    # render json: tracker.as_json
-    # if tracker.save
-    #   @tracker = tracker
-    #   render template: "trackers/show"
-    # else
-    #   render json: { errors: tracker.errors.full_messages }, status: :unprocessable_entity
-    # end
+    if @tracker.save
+      render template: "trackers/show"
+    else
+      render json: { errors: @tracker.errors.full_messages }, status: :unprocessable_entity
+    end
   end
   
   def update

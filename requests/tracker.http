@@ -10,9 +10,9 @@ Content-Type: application/json
 Authorization: Bearer {{ jwt }}
 
 {
-  "medium_id": 3,
-  "current": 121,
-  "progress": "Test"
+  "medium_id": 1,
+  "current": 34,
+  "progress": "Watching"
 }
 
 ### trackers Update
