@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   get "/trackers" => "trackers#index"
-  # post "/trackers" => "trackers#create"
-  # get "/trackers/:id" => "trackers#show"
-  # patch "/trackers/:id" => "trackers#update"
-  # delete "/trackers/:id" => "trackers#destroy"
+  post "/trackers" => "trackers#create"
+  get "/trackers/:id" => "trackers#show"
+  patch "/trackers/:id" => "trackers#update"
+  delete "/trackers/:id" => "trackers#destroy"
 
   # get "/media" => "media#index"
   # post "/media" => "media#create"

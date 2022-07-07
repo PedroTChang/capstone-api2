@@ -1,12 +1,13 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTcyMTIzNjZ9.2eC7VRv6Xz_1VpcqO6emAx1qfFWnJymG7tsHpKa3UuQ
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTczMDQ0MjF9.bBovf078KLuQi2Ki3Re9hbbkUhvXPaO3zwhViUt--zY
 
 ### trackers Index
 GET http://localhost:3000/trackers.json
+Authorization: Bearer {{ jwt }}
 
 ### trackers Create
 POST http://localhost:3000/trackers.json
 Content-Type: application/json
-# Authorization: Bearer {{ jwt }}
+Authorization: Bearer {{ jwt }}
 
 {
   "user_id": 1,
