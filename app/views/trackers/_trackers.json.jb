@@ -1,9 +1,9 @@
 {
   id: tracker.id,
-  # name: tracker.medium.name,
-  # latest: tracker.medium.latest,
-  # media_type: tracker.medium.media_type,
-  # status: tracker.medium.status,
+  name: tracker.medium.name,
+  latest: tracker.medium.latest,
+  media_type: tracker.medium.media_type,
+  status: tracker.medium.status,
   current: tracker.current,
   progress: tracker.progress,
 }
