@@ -1,0 +1,7 @@
+render "media/media", medium: @medium
+
+# {
+#   id: @medium.id,
+#   created_at: @medium.created_at,
+#   updated_at: @medium.updated_at
+# }

@@ -1,0 +1,8 @@
+render partial: "trackers/trackers", collection: @trackers, as: :tracker
+
+# @trackers.map do |tracker|
+#   {
+#     id: tracker.id,
+#     url: tracker_url(tracker, format: :json)
+#   }
+# end

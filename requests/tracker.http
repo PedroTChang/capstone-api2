@@ -3,7 +3,7 @@
 ### trackers Index
 GET http://localhost:3000/trackers.json
 
-### Medium Create
+### trackers Create
 POST http://localhost:3000/trackers.json
 Content-Type: application/json
 # Authorization: Bearer {{ jwt }}

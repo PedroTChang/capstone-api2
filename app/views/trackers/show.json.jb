@@ -1,0 +1,7 @@
+render "trackers/trackers", tracker: @tracker
+
+# {
+#   id: @tracker.id,
+#   created_at: @tracker.created_at,
+#   updated_at: @tracker.updated_at
+# }

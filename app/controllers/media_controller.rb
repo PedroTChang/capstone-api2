@@ -25,11 +25,11 @@ class MediaController < ApplicationController
   end
   
   def show
-    medium = params[:id]
+    medium_id = params[:id]
     medium = Medium.find_by(id: medium_id)
     render json: medium.as_json
     # @medium = Medium.find_by(id: medium_id)
-    # render template: "medium/show"
+    # render template: "media/show"
   end
 
   def update

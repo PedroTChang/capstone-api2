@@ -6,21 +6,22 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
 
-  get "/media" => "media#index"
-  post "/media" => "media#create"
-  get "/media/:id" => "media#show"
-  patch "/media/:id" => "media#update"
-  delete "/media/:id" => "media#destroy"
-
   get "/trackers" => "trackers#index"
-  post "/trackers" => "trackers#create"
-  get "/trackers/:id" => "trackers#show"
-  patch "/trackers/:id" => "trackers#update"
-  delete "/trackers/:id" => "trackers#destroy"
+  # post "/trackers" => "trackers#create"
+  # get "/trackers/:id" => "trackers#show"
+  # patch "/trackers/:id" => "trackers#update"
+  # delete "/trackers/:id" => "trackers#destroy"
 
-  # get "/images" => "#images#index"
+  # get "/media" => "media#index"
+  # post "/media" => "media#create"
+  # get "/media/:id" => "media#show"
+  # patch "/media/:id" => "media#update"
+  # delete "/media/:id" => "media#destroy"
+
+
+  # get "/images" => "images#index"
   # post "/images" => "images#create"
   # get "/images/:id" => "images#show"
-  # path "/images/:id" => "images#update"
+  # patch "/images/:id" => "images#update"
   # delete "/images/:id" => "images#destroy"
 end
