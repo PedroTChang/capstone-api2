@@ -1,5 +1,4 @@
 class TrackersController < ApplicationController
-  # before_action :authenticate_admin, except: [:index, :show]
   before_action :authenticate_user
 
   def index
@@ -23,9 +22,7 @@ class TrackersController < ApplicationController
   
   def update
     if current_user
-      # tracker = current_user.tracker.where()
       @tracker = Tracker.find_by(id: params[:id])
-      # @tracker.current_user.id
       @tracker.medium_id = params[:medium_id] || tracker.medium_id
       @tracker.current = params[:current] || tracker.current
       @tracker.progress = params[:progress] || tracker.progress

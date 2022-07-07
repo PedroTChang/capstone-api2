@@ -5,6 +5,4 @@
   media_type: medium.media_type,
   status: medium.status,
   images: medium.images,
-  created_at: medium.created_at,
-  updated_at: medium.updated_at,
 }

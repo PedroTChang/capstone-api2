@@ -1,33 +1,8 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTcyMTIzNjZ9.2eC7VRv6Xz_1VpcqO6emAx1qfFWnJymG7tsHpKa3UuQ
-
 ### Media Index
 GET http://localhost:3000/media.json
-
-### Medium Create
-POST http://localhost:3000/media.json
-Content-Type: application/json
-# Authorization: Bearer {{ jwt }}
-
-{
-  "name": "Test name",
-  "media_type": "manga",
-  "latest": 43,
-  "status": "Reading"
-}
 
 ### Media Show
 GET http://localhost:3000/media/1.json
 
-### Media Update
-PATCH http://localhost:3000/media/2.json
-Content-Type: application/json
-
-{
-  "name": "Test name again",
-  "latest": 22,
-  "media_context": "Anime",
-  "status": "Completed"
-}
-
 ### Media Destroy
-DELETE http://localhost:3000/media/3.json
+DELETE http://localhost:3000/media/3.json 
