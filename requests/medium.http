@@ -1,3 +1,4 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTczNDI2NDh9.O0iYYMZFKSr9-hrXfW8MKxs09adP_p3-QaRwCulgWPE
 ### Media Index
 GET http://localhost:3000/media.json
 
@@ -5,4 +6,5 @@ GET http://localhost:3000/media.json
 GET http://localhost:3000/media/1.json
 
 ### Media Destroy
-DELETE http://localhost:3000/media/3.json 
+DELETE http://localhost:3000/media/10.json
+Authorization: Bearer {{ jwt }}
