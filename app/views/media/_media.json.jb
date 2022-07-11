@@ -1,6 +1,7 @@
 {
   id: medium.id,
   name: medium.name,
+  synopsis: medium.synopsis,
   latest: medium.latest,
   media_type: medium.media_type,
   status: medium.status,
