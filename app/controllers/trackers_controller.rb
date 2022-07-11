@@ -5,6 +5,11 @@ class TrackersController < ApplicationController
     @trackers = current_user.trackers.where(user_id: current_user.id)
     render template: "trackers/index"
   end
+ 
+  def show
+    @tracker = Tracker.find_by(id: params[:id])
+    render template: "trackers/show"
+  end
 
   def create
     @tracker = Tracker.new(
@@ -21,12 +26,12 @@ class TrackersController < ApplicationController
   end
   
   def update
-    if current_user
-      @tracker = Tracker.find_by(id: params[:id])
-      @tracker.medium_id = params[:medium_id] || tracker.medium_id
-      @tracker.current = params[:current] || tracker.current
-      @tracker.progress = params[:progress] || tracker.progress
-      @tracker.save
+    tracker = Tracker.find_by(id: params[:id])
+    tracker.medium_id = params[:medium_id] || tracker.medium_id
+    tracker.current = params[:current] || tracker.current
+    tracker.progress = params[:progress] || tracker.progress
+    if tracker.save
+      @tracker = tracker
       render template: "trackers/show"
     else
       render json: { errors: tracker.errors.full_messages }, status: :unprocessable_entity

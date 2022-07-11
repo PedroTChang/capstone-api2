@@ -6,5 +6,5 @@ GET http://localhost:3000/media.json
 GET http://localhost:3000/media/1.json
 
 ### Media Destroy
-DELETE http://localhost:3000/media/10.json
+DELETE http://localhost:3000/media/18.json
 Authorization: Bearer {{ jwt }}
