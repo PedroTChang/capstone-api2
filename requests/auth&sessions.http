@@ -4,9 +4,9 @@ Content-Type: application/json
 
 {
   "name": "Test name",
-  "email": "test2@test.com",
+  "email": "test3@test.com",
   "password": "password",
-  "password_confirmation": "password",
+  "password_confirmation": "password"
 }
 
 ### Sessions create (login)

@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTczNDI2NDh9.O0iYYMZFKSr9-hrXfW8MKxs09adP_p3-QaRwCulgWPE
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc1OTI5NTB9.5-aPeZ6GhjXkfoaMk9lgDFqIuBP-VQxe1G1b-wawKA0
 ### Media Index
 GET http://localhost:3000/media.json
 
