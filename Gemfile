@@ -49,3 +49,4 @@ group :development do
   # gem "spring"
 end
 
+bundle lock --add-platform x84_64-linux
